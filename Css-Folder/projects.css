@@ -1,0 +1,19 @@
+.divCourses {
+    width: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: rgb(139, 110, 110);
+    border-radius: 25px;
+    margin: 25px;
+}
+
+.projectsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+    margin-right: 50px;
+    color: rgb(255, 255, 255);
+}
+.contentList {
+    font-family: cursive;
+}
