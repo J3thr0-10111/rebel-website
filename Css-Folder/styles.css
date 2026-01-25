@@ -38,9 +38,8 @@ header nav a:hover {
 .diyProjects {
   height: 320px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 0.7fr 0.7fr 0.7fr;
-  column-gap: 10px;
+  display: flex;
+  column-gap: 5px;
   padding: 15px;
   background-color: rgb(255, 238, 238);
   
