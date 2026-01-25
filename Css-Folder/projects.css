@@ -1,19 +1,83 @@
-.divCourses {
-    width: 100%;
-    text-decoration: none;
-    overflow: hidden;
-    background-color: rgb(139, 110, 110);
-    border-radius: 25px;
-    margin: 25px;
+/* Grid Layouts */
+.projectsList, .servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.projectsList {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 12px;
-    margin-right: 50px;
-    color: rgb(255, 255, 255);
+/* Card Styling */
+.divCourses {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
-.contentList {
-    font-family: cursive;
+/* Card styling for Services and Projects */
+.divCourses {
+  background: #f7fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+}
+
+.title {
+  color: #2d3748;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.divCourses:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+}
+
+.title {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  min-height: 3.5rem; /* Keeps cards aligned */
+}
+
+.overviewOfCourse {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
+.contentList p {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+}
+
+/* Custom Bullet Point */
+.contentList p::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+/* About Page Specific styling */
+.container.slide-in p {
+  background: var(--card-bg);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.container.slide-in a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
